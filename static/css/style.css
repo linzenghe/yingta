@@ -515,6 +515,15 @@ section{
 	background: url("../images/dev_bg.png") no-repeat 0 0;
 	background-size: cover;
 }
+.dev_section .section_title h3{
+	color: #fff;
+}
+.dev_section .section_title .line{
+	background:#fff;
+}
+.time_section{
+
+}
 /**********************
 RESPONSIVE
 ***********************/

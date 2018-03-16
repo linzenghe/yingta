@@ -1,3 +1,7 @@
+.time_main{
+    position: relative;
+}
+
 #timeline {
     width: 760px;
     height: 440px;
@@ -72,8 +76,12 @@
     line-height: 26px;
 }
 .next{
-    
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
 }
 .prev{
-
+    position: absolute;
+    top: -30px;
+    left: 50%;
 }
