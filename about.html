@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>上海赢他科技有限公司</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" href="static/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" >
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="static/fonts/iconfont.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="static/css/timelinr.css">
+    <!--相册-->
+    <link rel="stylesheet" type="text/css" href="static/css/justifiedgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/swipebox.css">
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header id="header">
-		<h1 class="sr-only">Modus | Home page</h1>
-		<nav class="navbar navbar-default navbar-fixed-top">
+    <header id="header">
+        <h1 class="sr-only">Modus | Home page</h1>
+        <nav class="navbar navbar-default navbar-fixed-top">
             <h1 class="sr-only">Main navigation</h1>
             <div class="container">
                 <div class="navbar-header">
@@ -32,7 +37,7 @@
                 </div>
                 <div class="navbar-collapse collapse" id="main-navbar" aria-expanded="false" style="height: 1px;">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href=""><span data-title="首页">首页</span></a></li>
+                        <li ><a href="/"><span data-title="首页">首页</span></a></li>
                         <li class="active"><a href="about.html"><span data-title="关于赢他">关于赢他</span></a></li>
                         <li><a href="buz.html"><span data-title="关于赢他">公司业务</span></a></li>
                         <li><a href="news.html"><span data-title="新闻中心">新闻中心</span></a></li>
@@ -51,11 +56,11 @@
                     </ul>
                 </div>
             </div>
-		</nav>
-	</header>
+        </nav>
+    </header>
 
     <div class="banner about_banner">
-        <img src="static/images/about_banner.png" width="100%">
+        <img src="static/images/about_banner.jpg" width="100%">
     </div>
 
     <section class="about_section">
@@ -68,7 +73,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5 company_pic">
-                        <img src="static/images/company.png">
+                        <img src="static/images/company.jpg">
                     </div>
                     <div class="col-sm-7">
                         <p class="about_txt">
@@ -86,8 +91,47 @@
                     <p>Culture</p>
                     <div class="line"></div>
                 </div>
-                <div class="">
-
+                <div class="culture_box">
+                    <div class="rvc" id="rvc1">
+                        <div class="rvc-wrapper">
+                            <ul>
+                               <li>
+                                   <a>
+                                       <div class="img-wrapper"><img src="static/images/culture/WH-1.jpg" width="100%"></div>
+                                       <h3>十年如一日</h3>
+                                       <p>勤奋、务实、上进</p>
+                                   </a>
+                               </li>
+                                <li>
+                                    <a>
+                                        <div class="img-wrapper"><img src="static/images/culture/WH-2.jpg" width="100%"></div>
+                                        <h3>满满正能量</h3>
+                                        <p>仁爱、公平、正义</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="img-wrapper"><img src="static/images/culture/WH-3.jpg" width="100%"></div>
+                                        <h3>前沿高科技</h3>
+                                        <p>求是、批判、创新</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <div class="img-wrapper"><img src="static/images/culture/WH-4.jpg" width="100%"></div>
+                                        <h3>树企业形象</h3>
+                                        <p>安全、优质、效益</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rvc-prv">
+                            <i class="icon icon-zuo"></i>
+                        </div>
+                        <div class="rvc-next">
+                            <i class="icon icon-you"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,7 +255,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 footer-left">
+                <div class="col-sm-7 footer-left">
                     <h3 class="sign">我们立志做全球跨境电商第一！</h3>
                     <p class="phone"><i class="icon icon-telephone"></i>021-31779771</p>
                     <ul class="address">
@@ -220,7 +264,7 @@
                         <li><label>公司地址：</label>上海市-浦东新区-金海路2449弄7号楼505室</li>
                     </ul>
                 </div>
-                <div class="col-sm-6 footer-right">
+                <div class="col-sm-5 footer-right">
                     <ul class="veCodeList clearfix">
                         <li class="text-center">
                             <div class="veCodeBox">
@@ -236,10 +280,11 @@
             <div class="container text-center">Shanghai Yintatech Network Co.,Ltd. All Rights Reserved. 技术支持：上海赢他网络科技有限公司 版权所有</div>
         </div>
     </footer>
-	<script src="static/js/jquery-3.2.1.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
     <!--时间轴-->
     <script src="static/lib/timelinr/jquery.timelinr-0.9.53.js"></script>
+
+    <!--企业文化轮播-->
+    <script src="static/lib/rvc/rvc.js"></script>
     <script type="text/javascript">
         $(function () {
             /*时间轴*/
@@ -250,6 +295,15 @@
                 arrowKeys: 'true',
                 startAt: 3
             });
+
+            $('#rvc1').rvc({
+                liNum: 4,//2~5之间的整数
+                spaceBetween: 30,//li项之间的距离
+                plr: 20,//当屏幕小于1024时，rvc的padding-left，padding-right值
+                time: 400,//动画时间
+                prv: '.rvc-prv',//前一个按钮
+                next: '.rvc-next'//下一个按钮
+            })
         })
     </script>
 </body>

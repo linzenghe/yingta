@@ -40,7 +40,7 @@
                     <li><a href="/"><span data-title="首页">首页</span></a></li>
                     <li><a href="about.html"><span data-title="关于赢他">关于赢他</span></a></li>
                     <li><a href="buz.html"><span data-title="关于赢他">公司业务</span></a></li>
-                    <li  class="active"><a href="news.html"><span data-title="新闻中心">新闻中心</span></a></li>
+                    <li class="active"><a href="news.html"><span data-title="新闻中心">新闻中心</span></a></li>
                     <li><a href="photo.html"><span data-title="公司相册">公司相册</span></a></li>
                     <li><a href="join.html"><span data-title="加入我们">加入我们</span></a></li>
                     <li><a href="relation.html"><span data-title="联系我们">联系我们</span></a></li>
@@ -59,72 +59,22 @@
     </nav>
 </header>
 
-    <div class="banner">
-        <img src="static/images/news_banner.jpg" width="100%">
-    </div>
-    <section class="news_section">
+    <section class="detail_section">
         <div class="container">
-            <div class="section_title text-center">
-                <h3>新闻与事件</h3>
-                <p>News center</p>
+            <article class="news_detail">
+                <h3 class="title text-center">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</h3>
+                <div class="data">18-02-28</div>
                 <div class="line"></div>
-            </div>
-            <div class="news_list">
-                <a href="" class="news_item clearfix">
-                    <span class="item_date">
-                        <span>18-02-28</span>
-                    </span>
-                    <span class="item_image">
-                        <img src="static/images/news_item.png">
-                    </span>
-                    <span class="item_text">
-                        <span class="item_name">公司2016年会在上海泰吉大酒店隆重召开</span>
-                        <span class="item_des">
-                            年月日，上海赢他网络科技有限公司年年会在上海泰吉大酒店隆重召开，公司邀请了各大合作供应商参加了本次年会，赢他全体员工出席本次会议，出席人数人左右。会上公司董事长殷总致开幕词，对年工作总结及年公司展望做了深入分析...
-                        </span>
-                    </span>
-                    <i class="icon icon-you more_icon"></i>
-                </a>
-                <a href="" class="news_item clearfix">
-                    <span class="item_date">
-                        <span>18-02-28</span>
-                    </span>
-                    <span class="item_image">
-                        <img src="static/images/news_item.png">
-                    </span>
-                    <span class="item_text">
-                        <span class="item_name">公司2016年会在上海泰吉大酒店隆重召开</span>
-                        <span class="item_des">
-                            年月日，上海赢他网络科技有限公司年年会在上海泰吉大酒店隆重召开，公司邀请了各大合作供应商参加了本次年会，赢他全体员工出席本次会议，出席人数人左右。会上公司董事长殷总致开幕词，对年工作总结及年公司展望做了深入分析...
-                        </span>
-                    </span>
-                    <i class="icon icon-you more_icon"></i>
-                </a>
-            </div>
-            <!--分页-->
-            <div class="newPage text-center">
-                <ul class="pagination">
-                    <li>
-                        <a title="首页">首页</a>
-                    </li>
-                    <li>
-                        <a title="上一页">上一页</a>
-                    </li>
-                    <li class="active">
-                        <a title="第1页">1</a>
-                    </li>
-                    <li >
-                        <a title="第2页">2</a>
-                    </li>
-                    <li >
-                        <a title="下一页">下一页</a>
-                    </li>
-                    <li >
-                        <a title="尾页">末页</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="body">
+                    <p>2017年1月21日，上海赢他网络科技有限公司2016年年会在上海泰吉大酒店隆重召开，公司邀请了各大合作供应商参加了本次年会，赢他全体员工出席本次会议，出席人数100人左右。
 
+                        会上公司董事长殷总致开幕词，对2016年工作总结及2017年公司展望做了深入分析；公司总经理CiCi、销售总监lily分别做了工作汇报；
+
+                        与此同时，公司举行了隆重的颁奖仪式，颁发了2016年度各大奖项，其中包括：“将军奖”、“孺子牛奖”、“雷锋奖”、“大红花奖”、“财神奖”等；同时为优质供应商颁发了“最佳合作伙伴”等奖项。
+
+                        会中，赢他的小伙伴们各显才艺，热闹非凡，充分展示了赢他员工的才艺及创造力；抽奖环节更是将本场年会推向高潮，本次年会的奖品包括：现金大红包、带薪年假、带薪旅游等；</p>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -156,6 +106,23 @@
         <div class="container text-center">Shanghai Yintatech Network Co.,Ltd. All Rights Reserved. 技术支持：上海赢他网络科技有限公司 版权所有</div>
     </div>
 </footer>
-
+    <script type="text/javascript">
+        $(function () {
+            loadH();
+            $(window).resize(function () {
+                loadH();
+            })
+        });
+        function loadH() {
+            var winH=$(window).height();
+            var bodyH=$('html').height();
+            var artH=$('.news_detail').height();
+            console.log(winH,bodyH,artH);
+            if(winH-artH>0){
+                var H=winH-bodyH;
+                $('.news_detail').css({'min-height':artH+H});
+            }
+        }
+    </script>
 </body>
 </html>

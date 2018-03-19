@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>上海赢他科技有限公司</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" href="static/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" >
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="static/fonts/iconfont.css">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!--相册-->
+    <link rel="stylesheet" type="text/css" href="static/css/justifiedgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/swipebox.css">
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -86,7 +93,12 @@
                 <div class="line"></div>
             </div>
             <div class="row news_item">
-                <div class="col-sm-7 news_left">
+                <div class="col-xs-12 col-sm-5 news_right pull-right">
+                    <div class="text-right">
+                        <img src="static/images/index_news.jpg">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-7 news_left pull-left">
                     <div class="item">
                         <ul>
                             <li class="clearfix">
@@ -126,15 +138,11 @@
                             </li>
                         </ul>
                         <div class="more">
-                            <a href="/">MORE<i class="icon icon-you"></i></a>
+                            <a href="news.html">MORE<i class="icon icon-you"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-5 news_right">
-                    <div class="text-right">
-                        <img src="static/images/index_news.png">
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -142,7 +150,7 @@
         <div class="container">
             <div class="intro_item clearfix">
                 <div class="col-sm-5">
-                    <img src="static/images/company.png" width="100%">
+                    <img src="static/images/company.jpg" width="100%">
                 </div>
                 <div class="col-sm-7">
                     <div class="title">
@@ -189,7 +197,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 footer-left">
+                <div class="col-sm-7 footer-left">
                     <h3 class="sign">我们立志做全球跨境电商第一！</h3>
                     <p class="phone"><i class="icon icon-telephone"></i>021-31779771</p>
                     <ul class="address">
@@ -198,7 +206,7 @@
                         <li><label>公司地址：</label>上海市-浦东新区-金海路2449弄7号楼505室</li>
                     </ul>
                 </div>
-                <div class="col-sm-6 footer-right">
+                <div class="col-sm-5 footer-right">
                     <ul class="veCodeList clearfix">
                         <li class="text-center">
                             <div class="veCodeBox">
@@ -214,8 +222,6 @@
             <div class="container text-center">Shanghai Yintatech Network Co.,Ltd. All Rights Reserved. 技术支持：上海赢他网络科技有限公司 版权所有</div>
         </div>
     </footer>
-	<script src="static/js/jquery-3.2.1.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
         $(function(){
