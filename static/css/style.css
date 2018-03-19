@@ -518,6 +518,9 @@ section{
 .dev_section .section_title h3{
 	color: #fff;
 }
+.dev_section .section_title p{
+	color: #fff;
+}
 .dev_section .section_title .line{
 	background:#fff;
 }
@@ -740,9 +743,18 @@ section{
 }
 
 /*联系我们*/
+.contact__content{
+	display: table;
+	width: 100%;
+}
 .contact__content .module{
 	text-align: center;
-	border-right: 1px dashed #dcdcdc
+	border-right: 1px dashed #dcdcdc;
+	display: table-cell;
+	width: 33.33%;
+}
+.contact__content .module:last-child{
+	border-right: 0;
 }
 .contact__content .module .contact__icon{
 	margin-bottom: 15%;
@@ -771,9 +783,10 @@ section{
 .contact__content .module .contact__item b{
 	display: inline-block;
 }
-.contact__content .module p{
+.contact__content .module a{
 	margin: 0;
 	font-size: 14px;
+	display: block;
 }
 .map_content{
 	position: relative;
@@ -800,6 +813,9 @@ section{
 .map__buttons a.active{
 	background: #0086ff;
 	color: #fff;
+}
+.map_content .map{
+	margin-top: 24px;
 }
 /**********************
 RESPONSIVE
