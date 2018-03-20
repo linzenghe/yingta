@@ -1,235 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>上海赢他科技有限公司</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" >
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="static/fonts/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
-    <!--相册-->
-    <link rel="stylesheet" type="text/css" href="static/css/justifiedgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/swipebox.css">
-
-    <script src="static/js/jquery.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>PHPCMS演示站</title>
+<meta name="keywords" content="PHPCMS演示站">
+<meta name="description" content="PHPCMS演示站">
+<link href="http://yingta.com/statics/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="http://yingta.com/statics/css/default_blue.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://yingta.com/statics/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://yingta.com/statics/js/jquery.sgallery.js"></script>
+<script type="text/javascript" src="http://yingta.com/statics/js/search_common.js"></script>
 </head>
 <body>
-	<header id="header">
-		<h1 class="sr-only">Modus | Home page</h1>
-		<nav class="navbar navbar-default navbar-fixed-top">
-            <h1 class="sr-only">Main navigation</h1>
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="">
-                        <img alt="Modus" src="static/images/logo.png">
-                    </a>
-                </div>
-                <div class="navbar-collapse collapse" id="main-navbar" aria-expanded="false" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/"><span data-title="首页">首页</span></a></li>
-                        <li><a href="about.html"><span data-title="关于赢他">关于赢他</span></a></li>
-                        <li><a href="buz.html"><span data-title="关于赢他">公司业务</span></a></li>
-                        <li><a href="news.html"><span data-title="新闻中心">新闻中心</span></a></li>
-                        <li><a href="photo.html"><span data-title="公司相册">公司相册</span></a></li>
-                        <li><a href="join.html"><span data-title="加入我们">加入我们</span></a></li>
-                        <li><a href="relation.html"><span data-title="联系我们">联系我们</span></a></li>
-                        <li class="language">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
-                                <img src="static/images/chinese.svg">
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href=""><img src="static/images/chinese.svg"></a></li>
-                                <li><a href=""><img src="static/images/english.svg"></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+<div class="body-top">
+    <div class="content">
+        		<div id="announ">
+                 <ul>
+                                  </ul>
             </div>
-		</nav>
-	</header>
+     	 <script type="text/javascript">
+$(function(){
+	startmarquee('announ',22,1,500,3000);
+})
+</script>
+            <div class="login lh24 blue"><a href="http://yingta.com/index.php?m=content&c=rss&siteid=1" class="rss ib">rss</a><span class="rt"><script type="text/javascript">document.write('<iframe src="http://yingta.com/index.php?m=member&c=index&a=mini&forward='+encodeURIComponent(location.href)+'&siteid=1" allowTransparency="true"  width="500" height="24" frameborder="0" scrolling="no"></iframe>')</script></span></div>
+    </div>
+</div>
+<div class="header">
+	<div class="logo"><a href="http://yingta.com/"><img src="http://yingta.com/statics/images/v9/logo.jpg" /></a></div>
 
-    <div class="banner">
-        <div id="myCarousel" class="carousel slide" data-pause="none">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="static/images/slider/banner1.png" width="100%">
-                </div>
-                <div class="item">
-                    <img src="static/images/slider/banner1.png" width="100%">
-                </div>
-                <div class="item">
-                    <img src="static/images/slider/banner1.png" width="100%">
-                </div>
-            </div>
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon icon-zuo"></i></a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon icon-you"></i></a>
+    <div class="search">
+    	<div class="tab" id="search">
+																<a href="javascript:;" onclick="setmodel(1, $(this));" style="outline:medium none;" hidefocus="true"  class="on" >新闻</a><span> | </span>										<a href="javascript:;" onclick="setmodel(3, $(this));" style="outline:medium none;" hidefocus="true" >图片</a><span> | </span>										<a href="javascript:;" onclick="setmodel(2, $(this));" style="outline:medium none;" hidefocus="true" >下载</a><span> | </span>										<a href="javascript:;" onclick="setmodel(52, $(this));" style="outline:medium none;" hidefocus="true" >专题</a>								</div>
+
+        <div class="bd">
+            <form action="http://yingta.com/index.php" method="get" target="_blank">
+				<input type="hidden" name="m" value="search"/>
+				<input type="hidden" name="c" value="index"/>
+				<input type="hidden" name="a" value="init"/>
+				<input type="hidden" name="typeid" value="1" id="typeid"/>
+				<input type="hidden" name="siteid" value="1" id="siteid"/>
+                <input type="text" class="text" name="q" id="q"/><input type="submit" value="搜 索" class="button" />
+            </form>
         </div>
     </div>
-    <!--新闻-->
-    <section class="section_news">
-        <div class="container">
-            <div class="section_title text-center">
-                <h3>新闻与事件</h3>
-                <p>news center</p>
-                <div class="line"></div>
+
+    <div class="banner"><script language="javascript" src="http://yingta.com/index.php?m=poster&c=index&a=show_poster&id=1"></script></div>
+    <div class="bk3"></div>
+    <div class="nav-bar">
+    	<map>
+    	        	<ul class="nav-site">
+			<li><a href="http://yingta.com"><span>首页</span></a></li>
+						<li class="line">|</li>
+			<li><a href="http://yingta.com"><span>国内</span></a></li>
+						<li class="line">|</li>
+			<li><a href="http://yingta.com"><span>下载</span></a></li>
+						<li class="line">|</li>
+			<li><a href="http://yingta.com"><span>图片</span></a></li>
+			            </ul>
+        		        </map>
+    </div> 
+	
+	</div>
+</div><!--main-->
+<div class="main">
+	<div class="col-left">
+    	<div class="news-hot">
+        	<div class="content">
+        	        	   
+                
             </div>
-            <div class="row news_item">
-                <div class="col-xs-12 col-sm-5 news_right pull-right">
-                    <div class="text-right">
-                        <img src="static/images/index_news.jpg">
-                    </div>
+        </div>
+        <div class="slide">
+            <div class="FocusPic">
+                        	<div class="content" id="main-slide">
+                    <div class="changeDiv">  
+                                        </div>
                 </div>
-                <div class="col-xs-12 col-sm-7 news_left pull-left">
-                    <div class="item">
-                        <ul>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                        </ul>
-                        <hr>
-                        <ul>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                            <li class="clearfix">
-                                <a class="text col-xs-8">2017年1月 公司2016年会在上海泰吉大酒店隆重召开</a>
-                                <span class="time col-xs-4 text-right">2017/1/4</span>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <a href="news.html">MORE<i class="icon icon-you"></i></a>
                         </div>
-                    </div>
-                </div>
-
+            <div class="bk10"></div>
+        	<div class="box extend">
+            	<div class="col-left">争议</div>
+                <div class="col-auto">
+								</div>
+                <script language="javascript" src="http://yingta.com/caches/poster_js/10.js"></script>
             </div>
         </div>
-    </section>
-    <section class="section_intro">
-        <div class="container">
-            <div class="intro_item clearfix">
-                <div class="col-sm-5">
-                    <img src="static/images/company.jpg" width="100%">
-                </div>
-                <div class="col-sm-7">
-                    <div class="title">
-                        <h3>公司简介</h3>
-                        <span>COMPANY PROFILE</span>
-                        <div class="line"></div>
+        <div class="bk10"></div>
+        <div class="box">
+        		<h5>图片新闻</h5>
+                      <ul class="content news-photo picbig">
+                         </ul>
                     </div>
-                    <p class="into_txt">
-                        上海赢他网络科技有限公司(Shanghai Yinta TechNetWork Co.,LTD)，是一家专注于全球B2C跨国在线零售业务的跨国电商外贸公司。
-                    </p>
-                    <p class="into_txt">
-                        公司于2013年成立，注册在上海自贸区。具有美资背景，由美国华盛顿总公司控股。目前上海办事处拥有150名员工及1000平方米繁华地段写字楼。上海的办公地点位于浦东新区地铁线宝龙广场写字楼，四周交通便利，临近12号及9号地铁线。公司于2016年在广州成立了广州赢他销售分部，于2017年在深圳成立分公司；公司立志于帮助中国的中小型制造企业，把产品直接卖到海外消费者手中，减少中间环节，优化物流。
-                    </p>
-                    <div class="more text-right">
-                        <a href="/">MORE<i class="icon icon-you"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--加入我们-->
-    <section class="section_join">
-        <div class="container">
-            <div class="row join_item">
-                <div class="col-sm-6">
-                    <div class="title">
-                        <h3>加入我们</h3>
-                        <span>join us</span>
-                        <div class="line"></div>
-                    </div>
-                    <p class="join_info">Amazon 销售专员、Ebay销售专员、Wish销售专员、Java开发工程师、Amazon站外推广人员......</p>
-                    <p class="join_info">同时欢迎各界供销商加入我们</p>
-                    <div class="more">
-                        <a href="/">MORE<i class="icon icon-you"></i></a>
-                    </div>
-                    <h2 class="sign">以人为本，共创共赢</h2>
-                </div>
-                <div class="col-sm-6 join_right text-right">
-                    <a href="/join"><img src="static/images/join_sign.png"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 footer-left">
-                    <h3 class="sign">我们立志做全球跨境电商第一！</h3>
-                    <p class="phone"><i class="icon icon-telephone"></i>021-31779771</p>
-                    <ul class="address">
-                        <li><label>联系我们：</label>021-31779771</li>
-                        <li><label>电子邮箱：</label>yintatech@163.com</li>
-                        <li><label>公司地址：</label>上海市-浦东新区-金海路2449弄7号楼505室</li>
-                    </ul>
-                </div>
-                <div class="col-sm-5 footer-right">
-                    <ul class="veCodeList clearfix">
-                        <li class="text-center">
-                            <div class="veCodeBox">
-                                <img src="static/images/vecode.jpg">
+        <div class="bk10"></div>
+                        <div class="box cat-area" style=" margin-right:10px">
+        		<h5 class="title-1">国内<a href="http://yingta.com" class="more">更多>></a></h5>
+             <div class="content">
+                                                        
+                <div class="bk15 hr"></div>
+                
+                <ul class="list lh24 f14">
+                                </ul>
                             </div>
-                            <p>关注赢他科技</p>
-                        </li>
-                    </ul>
-                </div>
+        </div>
+        		                <div class="box cat-area" >
+        		<h5 class="title-1">下载<a href="http://yingta.com" class="more">更多>></a></h5>
+             <div class="content">
+                                                        
+                <div class="bk15 hr"></div>
+                
+                <ul class="list lh24 f14">
+                                </ul>
+                            </div>
+        </div>
+        <div class="bk10"></div>		                <div class="box cat-area" style=" margin-right:10px">
+        		<h5 class="title-1">图片<a href="http://yingta.com" class="more">更多>></a></h5>
+             <div class="content">
+                                                        
+                <div class="bk15 hr"></div>
+                
+                <ul class="list lh24 f14">
+                                </ul>
+                            </div>
+        </div>
+        		    </div>
+    <div class="col-auto">
+    	<div class="box">
+        	 <h5 class="title-2">公告<a href="" class="more">&nbsp;</a></h5>
+             <div class="content">
+                                <ul class="list lh24 f14">
+                                   </ul>
+                            </div>
+        </div>
+        <div class="bk10"></div>
+        <div class="box">
+        	<h5 class="title-2">专题<a href="http://yingta.com/index.php?m=special&c=index&a=special&siteid=1" class="more">更多>></a></h5>
+            <div class="content special">
+                                                </div>
+        </div>
+        <div class="bk10"></div>
+        <div class="box">
+            <h5 class="title-2"><span class="rt fn f12 tab SwapTab"><span class="fb">热点</span> | <span >评论</span> | <span>关注</span></span>排行</h5>
+            <div class="tab-content">
+            <ul class="content digg">
+										            </ul>
+            <ul class="content digg hidden">
+										            </ul>
+            <ul class="content digg hidden">
+										            </ul>
             </div>
+        </div><div class="bk10"></div>
+        <div class="box">
+            <h5 class="title-2">调查问卷<a href="http://yingta.com/index.php?m=vote&c=index&siteid=1" class="more">更多>></a></h5>
+ 
+<script language="javascript" src="http://yingta.com/index.php?m=vote&c=index&a=show&action=js&subjectid=1&type=3"></script>
         </div>
-        <div class="copyright">
-            <div class="container text-center">Shanghai Yintatech Network Co.,Ltd. All Rights Reserved. 技术支持：上海赢他网络科技有限公司 版权所有</div>
-        </div>
-    </footer>
-
-    <script type="text/javascript">
-        $(function(){
-            $('#myCarousel').carousel({
-                interval: 5000
-            });
-            $('.carousel-indicators li:first-child').addClass('active');
-        })
-    </script>
+    </div>
+    <div class="bk10"></div>
+	
+	<div class="box blogroll ylink">
+    	<h5><a href="http://yingta.com/index.php?m=link&siteid=1" hidefocus="true" class="rt">更多>></a>友情链接<a href="http://yingta.com/index.php?m=link&c=index&a=register&siteid=1" class="red">申请链接</a></h5>
+        <div class="bk10"></div>
+	<ul class="colli imgul">
+                        <li><a href="http://www.phpcms.cn" title="PHPCMS" target="_blank"><img src="http://www.phpcms.cn/images/logo_88_31.gif" width="88" height="31" /></a></li>
+                <li><a href="http://www.sdo.com" title="盛大在线" target="_blank"><img src="http://www.snda.com/cn/logo/comp_logo_sdo.gif" width="88" height="31" /></a></li>
+                    </ul>
+          <div class="bk10"></div>
+	<div class="linka">
+		 	</div>
+	</div>
+</div>
+<script type="text/javascript"> 
+$(function(){
+	new slide("#main-slide","cur",310,260,1);//焦点图
+	new SwapTab(".SwapTab","span",".tab-content","ul","fb");//排行TAB
+})
+</script>
+<div class="footer">
+<p class="info">
+<a href="http://yingta.com/html/about/aboutus/" target="_blank">关于我们</a> |  
+<a href="http://yingta.com/html/about/contactus/" target="_blank">联系方式</a> |  
+<a href="http://test.phpcms.cn/index.php?m=content&c=index&a=lists&catid=4" target="_blank">版权声明</a> |  
+<a href="http://yingta.com/html/about/hr/" target="_blank">招聘信息</a> |  
+<a href="http://yingta.com/index.php?m=link" target="_blank">友情链接</a>
+<br />
+Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.6.3</em> &copy; 2017 <img src="http://yingta.com/statics/images/copyright.gif"/></p>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".picbig").each(function(i){
+		var cur = $(this).find('.img-wrap').eq(0);
+		var w = cur.width();
+		var h = cur.height();
+	   $(this).find('.img-wrap img').LoadImage(true, w, h,'http://yingta.com/statics/images/msg_img/loading.gif');
+	});
+})
+</script>
 </body>
 </html>
