@@ -72,14 +72,5 @@ return array (
     'urlrule' => 'list-{$catid}-{$page}.html',
     'example' => 'list-1-1.html',
   ),
-  31 => 
-  array (
-    'urlruleid' => '31',
-    'module' => 'content',
-    'file' => 'testurl',
-    'ishtml' => '0',
-    'urlrule' => '{$catdir}.html',
-    'example' => 'test.html',
-  ),
 );
 ?>

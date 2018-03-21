@@ -1,25 +1,19 @@
 <?php defined('IN_ADMIN') or exit('No permission resources.'); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>" />
-<meta http-equiv="X-UA-Compatible" content="IE=7" />
 <title><?php echo L('message_tips');?></title>
-<style type="text/css">
-<!--
-*{ padding:0; margin:0; font-size:12px}
-a:link,a:visited{text-decoration:none;color:#0068a6}
-a:hover,a:active{color:#ff6600;text-decoration: underline}
-.showMsg{border: 1px solid #1e64c8; zoom:1; width:450px; height:172px;position:absolute;top:44%;left:50%;margin:-87px 0 0 -225px}
-.showMsg h5{background-image: url(<?php echo IMG_PATH?>msg_img/msg.png);background-repeat: no-repeat; color:#fff; padding-left:35px; height:25px; line-height:26px;*line-height:28px; overflow:hidden; font-size:14px; text-align:left}
-.showMsg .content{ padding:46px 12px 10px 45px; font-size:14px; height:64px; text-align:left}
-.showMsg .bottom{ background:#e4ecf7; margin: 0 1px 1px 1px;line-height:26px; *line-height:30px; height:26px; text-align:center}
-.showMsg .ok,.showMsg .guery{background: url(<?php echo IMG_PATH?>msg_img/msg_bg.png) no-repeat 0px -560px;}
-.showMsg .guery{background-position: left -460px;}
--->
-</style>
+
+<link href="<?php echo CSS_PATH?>muntime/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo CSS_PATH?>muntime/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles1.css" title="styles1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles2.css" title="styles2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles3.css" title="styles3" media="screen" />
+
 <script type="text/javaScript" src="<?php echo JS_PATH?>jquery.min.js"></script>
 <script language="JavaScript" src="<?php echo JS_PATH?>admin_common.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>styleswitch.js"></script>
 </head>
 <body>
 <div class="showMsg" style="text-align:center">

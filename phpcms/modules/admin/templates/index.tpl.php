@@ -1,41 +1,27 @@
 <?php defined('IN_ADMIN') or exit('No permission resources.'); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" class="off">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET?>" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<title><?php echo L('admin_site_title')?></title>
-<link href="<?php echo CSS_PATH?>reset.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo CSS_PATH.SYS_STYLE;?>-system.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo CSS_PATH?>dialog.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH?>style/<?php echo SYS_STYLE;?>-styles1.css" title="styles1" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>style/<?php echo SYS_STYLE;?>-styles2.css" title="styles2" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>style/<?php echo SYS_STYLE;?>-styles3.css" title="styles3" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>style/<?php echo SYS_STYLE;?>-styles4.css" title="styles4" media="screen" />
+<title>后台管理中心 v 1.1</title>
+<meta name="author" content="muntime.com" />
+<link href="<?php echo CSS_PATH?>muntime/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo CSS_PATH?>muntime/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles1.css" title="styles1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles2.css" title="styles2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles3.css" title="styles3" media="screen" />
+
+<link href="<?php echo CSS_PATH?>table_form.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>styleswitch.js"></script>
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>dialog.js"></script>
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>hotkeys.js"></script>
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>jquery.sgallery.js"></script>
+
 <script type="text/javascript">
 var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 </script>
-<style type="text/css">
-.objbody{overflow:hidden}
 
-.btns{background-color:#666;}
-.btns{position: absolute; top:116px; right:30px; z-index:1000; opacity:0.6;}
-.btns2{background-color:rgba(0,0,0,0.5); color:#fff; padding:2px; border-radius:3px; box-shadow:0px 0px 2px #333; padding:0px 6px; border:1px solid #ddd;}
-.btns:hover{opacity:1;}
-.btns h6{padding:4px; border-bottom:1px solid #666; text-shadow: 0px 0px 2px #000;}
-.btns .pd4{ padding-top:4px; border-top:1px solid #999;}
-.pd4 li{border-radius:0px 6spx 0px 6px; margin-top:2px; margin-bottom:3px; padding:2px 0px;}
-.btns .pd4 li span{padding:0px 6px;}
-.pd{padding:4px;}
-.ac{background-color:#333; color:#fff;}
-.hvs{background-color:#555; cursor: pointer;}
-.bg_btn{background: url(<?php echo IMG_PATH?>admin_img/icon2.jpg) no-repeat; width:32px; height:32px;}
-</style>
 </head>
 <body scroll="no" class="objbody">
 <div class="btns btns2" id="btnx">
@@ -65,7 +51,6 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 		<li class="s1 styleswitch" rel="styles1"></li>
 		<li class="s2 styleswitch" rel="styles2"></li>
 		<li class="s3 styleswitch" rel="styles3"></li>
-        <li class="s4 styleswitch" rel="styles4"></li>
 	</ul>
         </div>
     </div>
@@ -103,7 +88,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
         </div>
     <div class="col-auto mr8">
     <div class="crumbs">
-    <div class="shortcut cu-span"><a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a><a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'700', height:'500', lock:true});void(0);"><span><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
+    <div class="shortcut cu-span"><a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a><a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'710', height:'500', lock:true});void(0);"><span><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
     <?php echo L('current_position')?><span id="current_pos"></span></div>
     	<div class="col-1">
         	<div class="content" style="position:relative; overflow:hidden">
@@ -167,7 +152,7 @@ function wSize(){
 	var str=getWindowSize();
 	var strs= new Array(); //定义一数组
 	strs=str.toString().split(","); //字符分割
-	var heights = strs[0]-150,Body = $('body');$('#rightMain').height(heights);   
+	var heights = strs[0]-148,Body = $('body');$('#rightMain').height(heights);   
 	//iframe.height = strs[0]-46;
 	if(strs[1]<980){
 		$('.header').css('width',980+'px');
@@ -175,16 +160,17 @@ function wSize(){
 		Body.attr('scroll','');
 		Body.removeClass('objbody');
 	}else{
-		$('.header').css('width','auto');
+		// $('.header').css('width','auto');
 		$('#content').css('width','auto');
 		Body.attr('scroll','no');
 		Body.addClass('objbody');
 	}
 	
-	var openClose = $("#rightMain").height()+39;
-	$('#center_frame').height(openClose+9);
+	//修改框架改变后的数值Muntime.com
+	var openClose = $("#rightMain").height()+44;
+	$('#center_frame').height(openClose-14);
 	$("#openClose").height(openClose+30);	
-	$("#Scroll").height(openClose-20);
+	$("#Scroll").height(openClose-14);
 	windowW();
 }
 wSize();
@@ -212,12 +198,13 @@ $(function(){
 	//默认载入左侧菜单
 	$("#leftMain").load("?m=admin&c=index&a=public_menu_left&menuid=10");
 
-	//面板切换
-	$("#btnx").removeClass("btns2");
-	$("#Site_model,#btnx h6").css("display","none");
-	$("#btnx").hover(function(){$("#Site_model,#btnx h6").css("display","block");$(this).addClass("btns2");$(".bg_btn").hide();},function(){$("#Site_model,#btnx h6").css("display","none");$(this).removeClass("btns2");$(".bg_btn").show();});
-	$("#Site_model li").hover(function(){$(this).toggleClass("hvs");},function(){$(this).toggleClass("hvs");});
-	$("#Site_model li").click(function(){$("#Site_model li").removeClass("ac"); $(this).addClass("ac");});
+	//修改面板切换 Muntime.com
+	// $("#btnx").removeClass("btns2");
+	// $("#Site_model,#btnx h6").css("display","none");
+	// $("#btnx").hover(function(){$("#Site_model,#btnx h6").css("display","block");$(this).addClass("btns2");$(".bg_btn").hide();},function(){$("#Site_model,#btnx h6").css("display","none");$(this).removeClass("btns2");$(".bg_btn").show();});
+	// $("#Site_model li").hover(function(){$(this).toggleClass("hvs");},function(){$(this).toggleClass("hvs");});
+	// $("#Site_model li").click(function(){$("#Site_model li").removeClass("ac"); $(this).addClass("ac");});
+	$("#btnx").toggle(function(){_Site_M('project1');},function(){_Site_M();}); 
 })
 //站点选择
 function site_select(id,name, domain, siteid) {
@@ -365,9 +352,13 @@ setInterval("session_life()", 160000);
 function session_life() {
 	$.get("?m=admin&c=index&a=public_session_life");
 }
+
+//修改锁屏界面 Muntime.com
 function lock_screen() {
 	$.get("?m=admin&c=index&a=public_lock_screen");
 	$('#dvLockScreen').css('display','');
+	$('#lock_password').attr("placeholder","请输入密码解锁！");
+	$('#dvLockScreenWin .input .submit').attr("value","解锁");
 }
 function check_screenlock() {
 	var lock_password = $('#lock_password').val();

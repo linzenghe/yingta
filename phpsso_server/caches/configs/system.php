@@ -11,14 +11,14 @@ return array(
 //Cookie配置
 'cookie_domain' => '', //Cookie 作用域
 'cookie_path' => '/', //Cookie 作用路径
-'cookie_pre' => 'kuuiB_', //Cookie 前缀，同一域名下安装多套系统时，请修改Cookie前缀
+'cookie_pre' => 'ighfH_', //Cookie 前缀，同一域名下安装多套系统时，请修改Cookie前缀
 'cookie_ttl' => 0, //Cookie 生命周期，0 表示随浏览器进程
 
-'js_path' => 'http://yingta.com/phpsso_server/statics/js/', //CDN JS
-'css_path' => 'http://yingta.com/phpsso_server/statics/css/', //CDN CSS
-'img_path' => 'http://yingta.com/phpsso_server/statics/images/', //CDN img
+'js_path' => 'http://yintatech.cn/phpsso_server/statics/js/', //CDN JS
+'css_path' => 'http://yintatech.cn/phpsso_server/statics/css/', //CDN CSS
+'img_path' => 'http://yintatech.cn/phpsso_server/statics/images/', //CDN img
 'upload_path' => PHPCMS_PATH.'uploadfile/', //上传文件路径
-'app_path' => 'http://yingta.com/phpsso_server/',//动态域名配置地址
+'app_path' => 'http://yintatech.cn/phpsso_server/',//动态域名配置地址
 
 'charset' => 'utf-8', //网站字符集
 'timezone' => 'Etc/GMT-8', //网站时区（只对php 5.1以上版本有效），Etc/GMT-8 实际表示的是 GMT+8
@@ -26,7 +26,7 @@ return array(
 'admin_log' => 0, //是否记录后台操作日志
 'errorlog' => 0, //是否保存错误日志
 'gzip' => 1, //是否Gzip压缩后输出
-'auth_key' => 'dlDGYfLUMYxD8lEMfzgk', // //Cookie密钥
+'auth_key' => 'm41aBmIPHWWcr5xwTPhf', // //Cookie密钥
 'lang' => 'zh-cn',  //网站语言包
 'admin_founders' => '1', //网站创始人ID，多个ID逗号分隔
 'execution_sql' => 0, //EXECUTION_SQL

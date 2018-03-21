@@ -1,15 +1,19 @@
-<?php defined('IN_ADMIN') or exit('No permission resources.');?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php defined('IN_ADMIN') or exit('No permission resources.'); ?>
+<!DOCTYPE html>
 <head>
-<meta content="IE=7" http-equiv="X-UA-Compatible">
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>" />
 <title><?php echo L('phpsso')?></title>
-<link href="<?php echo CSS_PATH?>reset.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo CSS_PATH?>system.css" rel="stylesheet" type="text/css" />
+
+<link href="<?php echo CSS_PATH?>muntime/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo CSS_PATH?>muntime/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH?>table_form.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo CSS_PATH?>dialog.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles1.css" title="styles1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles2.css" title="styles2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="<?php echo CSS_PATH?>muntime/styles3.css" title="styles3" media="screen" />
+
 <script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo JS_PATH?>styleswitch.js"></script>
 <script type="text/javascript"> 
 $(function(){
 	$(".table-list .wrap").wrap("<div style='overflow-y:auto;overflow-x:hidden;' class='scrolltable'></div>");
