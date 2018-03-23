@@ -1,4 +1,4 @@
-{template "content","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
 <div class="banner">
         <div id="myCarousel" class="carousel slide" data-pause="none">
             <!-- 轮播（Carousel）指标 -->
@@ -10,13 +10,13 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{IMG_PATH}slider/banner1.png" width="100%">
+                    <img src="<?php echo IMG_PATH;?>slider/banner1.png" width="100%">
                 </div>
                 <div class="item">
-                    <img src="{IMG_PATH}slider/banner1.png" width="100%">
+                    <img src="<?php echo IMG_PATH;?>slider/banner1.png" width="100%">
                 </div>
                 <div class="item">
-                    <img src="{IMG_PATH}slider/banner1.png" width="100%">
+                    <img src="<?php echo IMG_PATH;?>slider/banner1.png" width="100%">
                 </div>
             </div>
             <!-- 轮播（Carousel）导航 -->
@@ -35,7 +35,7 @@
             <div class="row news_item">
                 <div class="col-xs-12 col-sm-5 news_right pull-right">
                     <div class="text-right">
-                        <img src="{IMG_PATH}index_news.jpg">
+                        <img src="<?php echo IMG_PATH;?>index_news.jpg">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 news_left pull-left">
@@ -90,7 +90,7 @@
         <div class="container">
             <div class="intro_item clearfix">
                 <div class="col-sm-5">
-                    <img src="{IMG_PATH}company.jpg" width="100%">
+                    <img src="<?php echo IMG_PATH;?>company.jpg" width="100%">
                 </div>
                 <div class="col-sm-7">
                     <div class="title">
@@ -129,18 +129,10 @@
                     <h2 class="sign">以人为本，共创共赢</h2>
                 </div>
                 <div class="col-sm-6 join_right text-right">
-                    <a href="/join"><img src="{IMG_PATH}join_sign.png"></a>
+                    <a href="/join"><img src="<?php echo IMG_PATH;?>join_sign.png"></a>
                 </div>
             </div>
         </div>
     </section>
-{template "content","footer_part"}
-<script type="text/javascript">
-    $(function(){
-        $('#myCarousel').carousel({
-            interval: 5000
-        });
-        $('.carousel-indicators li:first-child').addClass('active');
-    })
-</script>
-{template "content","footer"}
+
+<?php include template("content","footer"); ?>

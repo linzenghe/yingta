@@ -92,5 +92,28 @@ return array (
     'sort' => '0',
     'type' => '0',
   ),
+  12 => 
+  array (
+    'modelid' => '12',
+    'siteid' => '1',
+    'name' => '仅需图文模型',
+    'description' => '',
+    'tablename' => 'piccon',
+    'setting' => '',
+    'addtime' => '0',
+    'items' => '0',
+    'enablesearch' => '1',
+    'disabled' => '0',
+    'default_style' => 'default',
+    'category_template' => 'category',
+    'list_template' => 'list',
+    'show_template' => 'show',
+    'js_template' => '',
+    'admin_list_template' => '',
+    'member_add_template' => '',
+    'member_list_template' => '',
+    'sort' => '0',
+    'type' => '0',
+  ),
 );
 ?>

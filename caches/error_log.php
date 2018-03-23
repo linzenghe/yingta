@@ -1,0 +1,1 @@
+<?php exit;?>03-23 18:06:56 | 2 | Missing argument 2 for category::delete_child(), called in D:\wamp3.0\www\yingta\phpcms\modules\admin\category.php on line 351 and defined | phpcms\modules\admin\category.php | 346

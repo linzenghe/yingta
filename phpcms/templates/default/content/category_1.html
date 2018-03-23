@@ -1,0 +1,30 @@
+{template "content","header"}
+
+{template "content","footer_part"}
+<!--时间轴-->
+    <script src="{JS_PATH}lib/timelinr/jquery.timelinr-0.9.53.js"></script>
+
+    <!--企业文化轮播-->
+    <script src="{JS_PATH}lib/rvc/rvc.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*时间轴*/
+            $('#timeline').timelinr({
+                orientation: 'vertical',
+                issuesSpeed: 300,
+                datesSpeed: 100,
+                arrowKeys: 'true',
+                startAt: 3
+            });
+
+            $('#rvc1').rvc({
+                liNum: 4,//2~5之间的整数
+                spaceBetween: 30,//li项之间的距离
+                plr: 20,//当屏幕小于1024时，rvc的padding-left，padding-right值
+                time: 400,//动画时间
+                prv: '.rvc-prv',//前一个按钮
+                next: '.rvc-next'//下一个按钮
+            })
+        })
+    </script>
+{template "content","footer"}
