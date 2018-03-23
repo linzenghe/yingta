@@ -96,7 +96,7 @@ return array (
   array (
     'modelid' => '12',
     'siteid' => '1',
-    'name' => '仅需图文模型',
+    'name' => '单图文',
     'description' => '',
     'tablename' => 'piccon',
     'setting' => '',

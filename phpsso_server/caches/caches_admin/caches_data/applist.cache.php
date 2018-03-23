@@ -6,7 +6,7 @@ return array (
     'type' => 'phpcms_v9',
     'name' => 'phpcms v9',
     'url' => 'http://yingta.com/',
-    'authkey' => 'TGszSHd0Le0UMkwGokpbBplDWMoWm4zW',
+    'authkey' => 'SNdGFU1ghIePkEGQ0G9YcW2W6rcxADGf',
     'ip' => '',
     'apifilename' => 'api.php?op=phpsso',
     'charset' => 'utf-8',

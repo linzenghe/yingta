@@ -1,4 +1,4 @@
-	<footer class="footer">
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?>	<footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 footer-left">
@@ -14,7 +14,7 @@
                     <ul class="veCodeList clearfix">
                         <li class="text-center">
                             <div class="veCodeBox">
-                                <img src="{IMG_PATH}vecode.jpg">
+                                <img src="<?php echo IMG_PATH;?>vecode.jpg">
                             </div>
                             <p>关注赢他科技</p>
                         </li>

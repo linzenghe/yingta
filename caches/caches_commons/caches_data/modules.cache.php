@@ -289,20 +289,6 @@ return array (
     'installdate' => '2010-09-01',
     'updatedate' => '2010-09-06',
   ),
-  'video' => 
-  array (
-    'module' => 'video',
-    'name' => '视频库',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2012-09-28',
-    'updatedate' => '2012-09-28',
-  ),
   'link' => 
   array (
     'module' => 'link',
@@ -336,6 +322,25 @@ return array (
     'disabled' => '0',
     'installdate' => '2018-03-23',
     'updatedate' => '2018-03-23',
+  ),
+  'formguide' => 
+  array (
+    'module' => 'formguide',
+    'name' => '表单向导',
+    'url' => 'formguide/',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => 'formguide',
+    'setting' => 'array (
+  \'allowmultisubmit\' => \'1\',
+  \'interval\' => \'30\',
+  \'allowunreg\' => \'0\',
+  \'mailmessage\' => \'用户向我们提交了表单数据，赶快去看看吧。\',
+)',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2010-10-20',
+    'updatedate' => '2010-10-20',
   ),
 );
 ?>

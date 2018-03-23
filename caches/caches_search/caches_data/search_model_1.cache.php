@@ -3,7 +3,7 @@ return array (
   12 => 
   array (
     'typeid' => '53',
-    'name' => '仅需图文模型',
+    'name' => '单图文',
     'sort' => '0',
   ),
   1 => 

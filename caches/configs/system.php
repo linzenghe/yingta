@@ -10,7 +10,7 @@ return array(
 //Cookie配置
 'cookie_domain' => '', //Cookie 作用域
 'cookie_path' => '', //Cookie 作用路径
-'cookie_pre' => 'mnfCo_', //Cookie 前缀，同一域名下安装多套系统时，请修改Cookie前缀
+'cookie_pre' => 'yptxZ_', //Cookie 前缀，同一域名下安装多套系统时，请修改Cookie前缀
 'cookie_ttl' => 0, //Cookie 生命周期，0 表示随浏览器进程
 //模板相关配置
 'tpl_root' => 'templates/', //模板保存物理路径
@@ -35,7 +35,7 @@ return array(
 'admin_log' => 1, //是否记录后台操作日志
 'errorlog' => 1, //1、保存错误日志到 cache/error_log.php | 0、在页面直接显示
 'gzip' => 1, //是否Gzip压缩后输出
-'auth_key' => 'OZkzgwPPHMIcSXAA2fRz', //密钥
+'auth_key' => '8wEG0s6nfZZtUvkdM49D', //密钥
 'lang' => 'zh-cn',  //网站语言包
 'lock_ex' => '1',  //写入缓存时是否建立文件互斥锁定（如果使用nfs建议关闭）
 
@@ -45,7 +45,7 @@ return array(
 'phpsso' => '1',	//是否使用phpsso
 'phpsso_appid' => '1',	//应用id	
 'phpsso_api_url' => 'http://yingta.com/phpsso_server',	//接口地址
-'phpsso_auth_key' => 'TGszSHd0Le0UMkwGokpbBplDWMoWm4zW', //加密密钥
+'phpsso_auth_key' => 'SNdGFU1ghIePkEGQ0G9YcW2W6rcxADGf', //加密密钥
 'phpsso_version' => '1', //phpsso版本
 
 'html_root' => '/html',//生成静态文件路径
