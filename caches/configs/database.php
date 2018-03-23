@@ -2,11 +2,11 @@
 
 return array (
 	'default' => array (
-		'hostname' => '139.196.20.160',
+		'hostname' => 'localhost',
 		'port' => 3306,
 		'database' => 'yingta',
-		'username' => 'yingta',
-		'password' => '8MDPMAtH8B',
+		'username' => 'root',
+		'password' => '',
 		'tablepre' => 'yt_',
 		'charset' => 'utf8',
 		'type' => 'mysqli',

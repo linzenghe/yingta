@@ -52,11 +52,11 @@ $(document).ready(function() {
        <div id="yzm" class="right"><?php echo form::checkcode('code_img')?></div>
     </div>
     <div class="admin_sub">
-        <input type="submit" value="立即登录" class="submit_btn">
+        <input type="submit" value="立即登陆" class="submit_btn">
     </div>
     <div class="admin_info">
-       <p>原版权归phpcms团队，后台界面版权归 蒙奇时光</p>
-       <p>系统二次开发版权归赞云科技</p>
+       <p>© 2015-2016 蒙奇时光 Muntime.com v1.1</p>
+       <p>赣ICP备15005092号-3</p>
     </div>
     </form>   
   </div>

@@ -303,6 +303,26 @@ return array (
     'installdate' => '2012-09-28',
     'updatedate' => '2012-09-28',
   ),
+  'link' => 
+  array (
+    'module' => 'link',
+    'name' => '友情链接',
+    'url' => '',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => '',
+    'setting' => 'array (
+  1 => 
+  array (
+    \'is_post\' => \'1\',
+    \'enablecheckcode\' => \'0\',
+  ),
+)',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2010-09-06',
+    'updatedate' => '2010-09-06',
+  ),
   'poster' => 
   array (
     'module' => 'poster',
@@ -314,8 +334,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-03-22',
-    'updatedate' => '2018-03-22',
+    'installdate' => '2018-03-23',
+    'updatedate' => '2018-03-23',
   ),
 );
 ?>
