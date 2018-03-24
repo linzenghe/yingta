@@ -1,0 +1,37 @@
+{template "content","header"}
+{template "content","header_part"}
+<div class="banner">
+    <img src="{IMG_PATH}join_banner.jpg" width="100%">
+</div>
+<section class="join_section">
+    <div class="container">
+        <div class="section_title text-center">
+            <h3>加入我们</h3>
+            <p>join us</p>
+            <div class="line"></div>
+        </div>
+        <div class="join_text text-center">
+            <p class="join_h">以人为本，共创多赢！</p>
+            <p class="join_b">企业的发展有赖于优秀人才的加入。为了提高公司的人才素质，公司与多所高校合作，免费为员工提供外贸电子商务的理论培训、实践以及员工的职场心理培训。 目前已经在江西外语外贸职业学院，江苏经贸职业技术学院等建立"实习实训基地"。 公司拥有完善的新人培训体系和业绩考核体系，为员工提供实现自我价值和提升自我才能的平台。</p>
+            <p class="join_f">想加入一个更加有前途、有发展的团队，赢他科技将是你的最佳选择！</p>
+        </div>
+        <div class="job_list">
+            {pc:content action="lists" catid="$catid" order="id DESC" num="10" moreinfo="1"}
+            {loop $data $v}
+            <div class="job_item">
+                <div class="title">{$v[title]}</div>
+                <div class="attribute clearfix">
+                    <div class="col-xs-4 col-sm-3">工作地点：{$v[workplace]}</div>
+                    <div class="col-xs-4 col-sm-3">薪金待遇：{$v[reward]}</div>
+                </div>
+                <div class="field">
+                    {$v[content]}
+                </div>
+            </div>
+            {/loop}
+            {/pc}
+        </div>
+    </div>
+</section>
+{template "content","footer_part"}
+{template "content","footer"}

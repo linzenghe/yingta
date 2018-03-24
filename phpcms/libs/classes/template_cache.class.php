@@ -179,6 +179,7 @@ final class template_cache {
 							$limit = '$offset,$pagesize';
 							$sql = 'SELECT COUNT(*) as count FROM ('.$datas['sql'].') T';
 							$str .= '$r = $get_db->sql_query("'.$sql.'");$s = $get_db->fetch_next();$pages=pages($s[\'count\'], $page, $pagesize, $urlrule);';
+							$str .= '$r = $get_db->sql_query("'.$sql.'");$s = $get_db->fetch_next();$wz_pages=wz_pages($s[\'count\'], $page, $pagesize, $urlrule);';
 						}
 						
 						
@@ -207,6 +208,7 @@ final class template_cache {
 					$datas['action'] = $action;
 					$str .= '$'.$op.'_total = $'.$op.'_tag->count('.self::arr_to_html($datas).');';
 					$str .= '$pages = pages($'.$op.'_total, $page, $pagesize, $urlrule);';
+					$str .= '$wz_pages = wz_pages($'.$op.'_total, $page, $pagesize, $urlrule);';
 				}
 				$str .= '$'.$return.' = $'.$op.'_tag->'.$action.'('.self::arr_to_html($datas).');';
 				$str .= '}';

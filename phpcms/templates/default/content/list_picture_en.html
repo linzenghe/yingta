@@ -1,0 +1,51 @@
+{template "content","header_en"}
+{template "content","header_en_part"}
+<div class="banner">
+    <img src="{IMG_PATH}photo_banner.jpg" width="100%">
+</div>
+<section class="photo_section">
+    <div class="container">
+        <div class="section_title text-center">
+            <h3>en公司相册</h3>
+            <p>Company album</p>
+            <div class="line"></div>
+        </div>
+        <div class="photo_nav text-center">
+        	{pc:content action="lists" catid="$catid" num="20" order="id ASC" page="$page"}
+        	{php $j=1;}
+        	{loop $data $r}
+        	<a href="{$r[url]}"><span {if $j==1} class="current"{/if}>{$r[title]}</span></a>
+        	{$j++}
+        	{/loop}
+        	{/pc}
+        </div>
+        <div class="swipeboxEx justified-gallery">
+        	{pc:content action="lists" catid="$catid" order="id ASC" num="1" moreinfo="1"}  
+			{loop $data $v}
+			{loop string2array($v['morepic']) $pic_k $r}
+            <a href="{$r[url]}" title="{$r[alt]}">
+                <img src="{$r[url]}"/>
+            </a>
+            {/loop}
+            {/loop}
+            {/pc}
+        </div>
+    </div>
+</section>
+{template "content","footer_en_part"}
+<script src="{JS_PATH}lib/photo/justifiedgallery.js"></script>
+<script src="{JS_PATH}lib/photo/jquery.swipebox.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.photo_section .photo_nav span').on('click',function () {
+            $(this).addClass('current').siblings().removeClass('current');
+        });
+
+        $('.swipeboxEx').each(function (i, el) {
+            $(el).justifiedGallery({rel: 'gal' + i}).on('jg.complete', function () {
+                if (i == 0) $('.swipeboxEx a').swipebox();   //如果有多个相册改变i的值
+            });
+        });
+    });
+</script>
+{template "content","footer_en"}

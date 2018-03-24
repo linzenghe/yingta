@@ -72,5 +72,14 @@ return array (
     'urlrule' => 'list-{$catid}-{$page}.html',
     'example' => 'list-1-1.html',
   ),
+  31 => 
+  array (
+    'urlruleid' => '31',
+    'module' => 'content',
+    'file' => 'category',
+    'ishtml' => '1',
+    'urlrule' => '{$categorydir}{$catdir}/index.html|{$categorydir}{$catdir}/{$page}.html',
+    'example' => 'test/china/1000.html',
+  ),
 );
 ?>

@@ -40,9 +40,9 @@ $authkey = upload_key('1,'.$thisExt.',1');
 		<th><?php echo L('line_time')?>：</th>
 		<td><?php echo form::date('poster[startdate]', date('Y-m-d H:i:s', SYS_TIME), 1)?></td>
 	</tr>
-	<tr>
+	<tr style="visibility: hidden;">
 		<th><?php echo L('down_time')?>：</th>
-		<td><?php echo form::date('poster[enddate]', '', 1)?></td>
+		<td><?php echo form::date('poster[enddate]', date('Y-m-d H:i:s', 1903766640), 1)?></td>
 	</tr>
 	</tbody>
 	</table><?php if(array_key_exists('images', $setting['type'])) {?><div class="pad-10" id="imagesdiv" style="display:">
@@ -54,7 +54,7 @@ $authkey = upload_key('1,'.$thisExt.',1');
   <tr>
     <th width="80"><?php echo L('linkurl')?>：</th>
     <td class="y-bg"><input type="text" class="input-text" name="setting[images][<?php echo $i;?>][linkurl]" id="linkurl<?php echo $i;?>" size="30" value="http://" /></td>
-    <td rowspan="2"><a href="javascript:flashupload('imgurl<?php echo $i;?>_images', '<?php echo L('upload_photo')?>','imgurl<?php echo $i;?>',preview,'1,<?php echo $thisExt?>,1','poster', '', '<?php echo $authkey?>');void(0);"><img src="<?php echo IMG_PATH;?>icon/upload-pic.png" id="imgurl<?php echo $i;?>_s" width="105" height="88"></a><input type="hidden" id="imgurl<?php echo $i;?>" name="setting[images][<?php echo $i;?>][imageurl]"></td>
+    <td rowspan="2"><a href="javascript:flashupload('imgurl<?php echo $i;?>_images', '<?php echo L('upload_photo')?>','imgurl<?php echo $i;?>',preview,'1,<?php echo $thisExt?>,1','poster', '', '<?php echo $authkey?>');void(0);"><img style="width:200px;height: auto;" src="<?php echo IMG_PATH;?>icon/upload-pic.png" id="imgurl<?php echo $i;?>_s"></a><input type="hidden" id="imgurl<?php echo $i;?>" name="setting[images][<?php echo $i;?>][imageurl]"></td>
   </tr>
   <tr>
     <th><?php echo L('alt')?>：</th>
@@ -67,7 +67,7 @@ $authkey = upload_key('1,'.$thisExt.',1');
   <tr>
     <th width="80"><?php echo L('linkurl')?>：</th>
     <td class="y-bg"><input type="text" class="input-text" name="setting[images][1][linkurl]" id="linkurl3" size="30" value="http://" /></td>
-    <td rowspan="2"><a href="javascript:flashupload('imgurl_images', '<?php echo L('upload_photo')?>','imgurl',preview,'1,<?php echo $thisExt?>,1','poster', '', '<?php echo $authkey?>');void(0);"><img src="<?php echo IMG_PATH;?>icon/upload-pic.png" id="imgurl_s" width="105" height="88"></a><input type="hidden" id="imgurl" name="setting[images][1][imageurl]"></td>
+    <td rowspan="2"><a href="javascript:flashupload('imgurl_images', '<?php echo L('upload_photo')?>','imgurl',preview,'1,<?php echo $thisExt?>,1','poster', '', '<?php echo $authkey?>');void(0);"><img src="<?php echo IMG_PATH;?>icon/upload-pic.png" id="imgurl_s"  style="width:200px;height: auto;"></a><input type="hidden" id="imgurl" name="setting[images][1][imageurl]"></td>
   </tr>
   <tr>
     <th><?php echo L('alt')?>：</th>

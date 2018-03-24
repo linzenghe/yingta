@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>test business - BUSINESS - 赢他</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="赢他">
+    <meta name="description" content="test content">
+    <link rel="stylesheet" href="http://yingta.com/statics/css/bootstrap.min.css" >
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="http://yingta.com/statics/css/fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="http://yingta.com/statics/css/style.css">
+
+    <!--相册-->
+    <link rel="stylesheet" type="text/css" href="http://yingta.com/statics/css/justifiedgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="http://yingta.com/statics/css/swipebox.css">
+
+    <script src="http://yingta.com/statics/js/jquery.min.js"></script>
+    <script src="http://yingta.com/statics/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="sr-only">Modus | Home page</h1>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <h1 class="sr-only">Main navigation</h1>
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">
+                        <img alt="Modus" src="http://yingta.com/statics/images/logo.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse" id="main-navbar" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav navbar-right">
+                                                <li ><a href="http://yingta.com"><span data-title="首页">首页</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/about/"><span data-title="关于赢他">关于赢他</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/buz/"><span data-title="公司业务">公司业务</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/news/"><span data-title="新闻中心">新闻中心</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/compic/"><span data-title="公司相册">公司相册</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/join/"><span data-title="加入我们">加入我们</span></a></li>
+                                                <li ><a href="http://yingta.com/html/ch/contact/"><span data-title="联系我们">联系我们</span></a></li>
+                                                                        <li class="language">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                                <img src="http://yingta.com/statics/images/chinese.svg">
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://yingta.com/html/ch/"><img src="http://yingta.com/statics/images/chinese.svg"></a></li>
+                                <li><a href="http://yingta.com/html/en/"><img src="http://yingta.com/statics/images/english.svg"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<section class="detail_section">
+    <div class="container">
+        <article class="news_detail">
+            <h3 class="title text-center">test business</h3>
+            <div class="data">18-03-24</div>
+            <div class="line"></div>
+            <div class="body">
+                test content            </div>
+        </article>
+    </div>
+</section>
+
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 footer-left">
+                    <h3 class="sign">我们立志做全球跨境电商第一！</h3>
+                    <p class="phone"><i class="icon icon-telephone"></i>021-31779771</p>
+                    <ul class="address">
+                        <li><label>联系我们：</label>021-31779771</li>
+                        <li><label>电子邮箱：</label>yintatech@163.com</li>
+                        <li><label>公司地址：</label>上海市-浦东新区-金海路2449弄7号楼505室</li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 footer-right">
+                    <ul class="veCodeList clearfix">
+                        <li class="text-center">
+                            <div class="veCodeBox">
+                                <img src="http://yingta.com/statics/images/vecode.jpg">
+                            </div>
+                            <p>关注赢他科技</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container text-center">Shanghai Yintatech Network Co.,Ltd. All Rights Reserved. 上海赢他网络科技有限公司 版权所有</div>
+        </div>
+    </footer><script type="text/javascript">
+    $(function () {
+        loadH();
+        $(window).resize(function () {
+            loadH();
+        })
+    });
+    function loadH() {
+        var winH=$(window).height();
+        var bodyH=$('html').height();
+        var artH=$('.news_detail').height();
+        console.log(winH,bodyH,artH);
+        if(winH-artH>0){
+            var H=winH-bodyH;
+            $('.news_detail').css({'min-height':artH+H});
+        }
+    }
+</script>
+</body>
+</html>

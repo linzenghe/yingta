@@ -39,28 +39,28 @@
                             <ul>
                                <li>
                                    <a>
-                                       <div class="img-wrapper"><img src="static/images/culture/WH-1.jpg" width="100%"></div>
+                                       <div class="img-wrapper"><img src="{IMG_PATH}culture/WH-1.jpg" width="100%"></div>
                                        <h3>十年如一日</h3>
                                        <p>勤奋、务实、上进</p>
                                    </a>
                                </li>
                                 <li>
                                     <a>
-                                        <div class="img-wrapper"><img src="static/images/culture/WH-2.jpg" width="100%"></div>
+                                        <div class="img-wrapper"><img src="{IMG_PATH}culture/WH-2.jpg" width="100%"></div>
                                         <h3>满满正能量</h3>
                                         <p>仁爱、公平、正义</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a>
-                                        <div class="img-wrapper"><img src="static/images/culture/WH-3.jpg" width="100%"></div>
+                                        <div class="img-wrapper"><img src="{IMG_PATH}culture/WH-3.jpg" width="100%"></div>
                                         <h3>前沿高科技</h3>
                                         <p>求是、批判、创新</p>
                                     </a>
                                 </li>
                                 <li>
                                     <a>
-                                        <div class="img-wrapper"><img src="static/images/culture/WH-4.jpg" width="100%"></div>
+                                        <div class="img-wrapper"><img src="{IMG_PATH}culture/WH-4.jpg" width="100%"></div>
                                         <h3>树企业形象</h3>
                                         <p>安全、优质、效益</p>
                                     </a>
@@ -92,99 +92,29 @@
             <div class="time_main">
                 <div id="timeline">
                     <ul id="dates">
+                        {pc:content action="lists" catid="9" num="30" order="id ASC" moreinfo="1"}
+                        {php $j=1;}
+                        {loop $data $val}
                         <li>
-                            <a href="#2005">2005</a>
+                            <a href="#{$j}">{$val[title]}</a>
                         </li>
-                        <li>
-                            <a href="#2006">2006</a>
-                        </li>
-                        <li>
-                            <a href="#2007">2007</a>
-                        </li>
-                        <li>
-                            <a href="#2008">2008</a>
-                        </li>
-                        <li>
-                            <a href="#2009">2009</a>
-                        </li>
-                        <li>
-                            <a href="#2010">2010</a>
-                        </li>
-                        <li>
-                            <a href="#2011">2011</a>
-                        </li>
-                        <li>
-                            <a href="#2012">2012</a>
-                        </li>
+                        {php $j++}
+                        {/loop}
+                        {/pc}
                     </ul>
                     <ul id="issues">
-                        <li id="2005">
-                            <img src="static/images/develop_img.png">
+                        {pc:content action="lists" catid="9" num="30" order="id ASC" moreinfo="1"}
+                        {php $j=1;}
+                        {loop $data $val}
+                        <li id="{$j}" data="$data">
+                            <img src="{$val[aboutpic]}">
                             <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
+                                {$val[content]}
                             </div>
                         </li>
-                        <li id="2006">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2007">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2008">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2009">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2010">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2011">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
-                        <li id="2012">
-                            <img src="static/images/develop_img.png">
-                            <div>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                                <p>上海赢他科技有限公司注册成立；</p>
-                            </div>
-                        </li>
+                        {php $j++}
+                        {/loop}
+                        {/pc}
                     </ul>
 
                 </div>
@@ -203,12 +133,14 @@
     <script type="text/javascript">
         $(function () {
             /*时间轴*/
+            var linum=1;
+            linum = $("#dates li").length;
             $('#timeline').timelinr({
                 orientation: 'vertical',
                 issuesSpeed: 300,
                 datesSpeed: 100,
                 arrowKeys: 'true',
-                startAt: 3
+                startAt: linum
             });
 
             $('#rvc1').rvc({

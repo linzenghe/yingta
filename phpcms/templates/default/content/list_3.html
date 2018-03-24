@@ -1,0 +1,46 @@
+{template "content","header"}
+{template "content","header_part"}
+    <div class="banner">
+        <img src="{IMG_PATH}news_banner.jpg" width="100%">
+    </div>
+    <section class="news_section">
+        <div class="container">
+            <div class="section_title text-center">
+                <h3>新闻与事件</h3>
+                <p>News center</p>
+                <div class="line"></div>
+            </div>
+            <div class="news_list">
+                {pc:content action="lists" catid="$catid" order="id DESC" num="6" moreinfo="1" page="$page"}
+                {loop $data $v}
+                <a href="{$v[url]}" class="news_item clearfix">
+                    <span class="item_date">
+                        <span>{date('y-m-d',$v[inputtime])}</span>
+                    </span>
+                    <span class="item_image">
+                        <img src="{$v[aboutpic]}">
+                    </span>
+                    <span class="item_text">
+                        <span class="item_name">{$v[title]}</span>
+                        <span class="item_des">
+                            {$v[description]}...
+                        </span>
+                    </span>
+                    <i class="icon icon-you more_icon"></i>
+                </a>
+                {/loop}
+                {/pc}
+            </div>
+            <!--分页-->
+            <div class="newPage text-center">
+                <ul class="pagination" id="pages">
+                    {$wz_pages}
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+{template "content","footer_part"}
+{template "content","footer"}

@@ -804,6 +804,7 @@ class index extends foreground {
 			$page = isset($_GET['page']) && trim($_GET['page']) ? intval($_GET['page']) : 1;
 			$favoritelist = $this->favorite_db->listinfo(array('userid'=>$memberinfo['userid']), 'id DESC', $page, 10);
 			$pages = $this->favorite_db->pages;
+			$wz_pages = $this->favorite_db->wz_pages;
 
 			include template('member', 'favorite_list');
 		}

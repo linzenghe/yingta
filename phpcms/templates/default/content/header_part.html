@@ -18,27 +18,19 @@
                 </div>
                 <div class="navbar-collapse collapse" id="main-navbar" aria-expanded="false" style="height: 1px;">
                     <ul class="nav navbar-nav navbar-right">
-                        {pc:content action="category" catid="6" num="25" siteid="$siteid" order="listorder ASC"}
+                        {pc:content action="category" catid="$parentid" catid="6" num="25" siteid="$siteid" order="listorder ASC"}
                         <li {if empty($catid)}class="active"{/if}><a href="{siteurl($siteid)}"><span data-title="首页">首页</span></a></li>
                         {loop $data $r}
-                        <li><a {if $r['catid'] == $catid || $CATEGORYS[$CAT[parentid]][catid]==$r['catid']}class="active" {/if} href="{$r[url]}"><span data-title="{$r[catname]}">{$r[catname]}</span></a></li>
+                        <li {if $r[catid]==$catid}class="active" {/if}><a href="{$r[url]}"><span data-title="{$r[catname]}">{$r[catname]}</span></a></li>
                         {/loop}
                         {/pc}
-
-                        <li class="active"><a href="{APP_PATH}"><span data-title="首页">首页</span></a></li>
-                        <li><a href="about.html"><span data-title="关于赢他">关于赢他</span></a></li>
-                        <li><a href="buz.html"><span data-title="公司业务">公司业务</span></a></li>
-                        <li><a href="news.html"><span data-title="新闻中心">新闻中心</span></a></li>
-                        <li><a href="photo.html"><span data-title="公司相册">公司相册</span></a></li>
-                        <li><a href="join.html"><span data-title="加入我们">加入我们</span></a></li>
-                        <li><a href="relation.html"><span data-title="联系我们">联系我们</span></a></li>
                         <li class="language">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
                                 <img src="{IMG_PATH}chinese.svg">
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href=""><img src="{IMG_PATH}chinese.svg"></a></li>
-                                <li><a href=""><img src="{IMG_PATH}english.svg"></a></li>
+                                <li><a href="{$CATEGORYS[6]['url']}"><img src="{IMG_PATH}chinese.svg"></a></li>
+                                <li><a href="{$CATEGORYS[20]['url']}"><img src="{IMG_PATH}english.svg"></a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,0 +1,36 @@
+{template "content","header_en"}
+{template "content","header_en_part"}
+
+<section class="detail_section">
+    <div class="container">
+        <article class="news_detail">
+            <h3 class="title text-center">{$title}</h3>
+            <div class="data">{date('y-m-d',strtotime($updatetime))}</div>
+            <div class="line"></div>
+            <div class="body">
+                {$content}
+            </div>
+        </article>
+    </div>
+</section>
+
+{template "content","footer_en_part"}
+<script type="text/javascript">
+    $(function () {
+        loadH();
+        $(window).resize(function () {
+            loadH();
+        })
+    });
+    function loadH() {
+        var winH=$(window).height();
+        var bodyH=$('html').height();
+        var artH=$('.news_detail').height();
+        console.log(winH,bodyH,artH);
+        if(winH-artH>0){
+            var H=winH-bodyH;
+            $('.news_detail').css({'min-height':artH+H});
+        }
+    }
+</script>
+{template "content","footer_en"}

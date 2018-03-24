@@ -18,3 +18,4 @@
 <?php exit;?>03-23 22:58:47 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>03-23 22:58:47 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>03-23 23:55:36 | 2 | Missing argument 2 for category::delete_child(), called in D:\wamp\www\yingta\phpcms\modules\admin\category.php on line 351 and defined | phpcms\modules\admin\category.php | 346
+<?php exit;?>03-24 15:49:05 | 2 | require(D:\wamp3.0\www\yingta\phpcms\modules\content\fields\\config.inc.php): failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207

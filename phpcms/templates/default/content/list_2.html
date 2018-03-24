@@ -1,0 +1,30 @@
+{template "content","header"}
+{template "content","header_part"}
+    <div class="banner">
+        <img src="{IMG_PATH}buz_banner.jpg" width="100%">
+    </div>
+    <section class="buz_section">
+        <div class="container">
+            <div class="section_title text-center">
+                <h3>我们的业务</h3>
+                <p>our business</p>
+                <div class="line"></div>
+            </div>
+            <div class="buz_list">
+                {pc:content action="lists" catid="$catid" order="id DESC" num="10" moreinfo="1"}
+                {loop $data $v}
+                <div class="buz_item">
+                    <div class="buz_img">
+                        <img src="{$v[aboutpic]}" width="100%">
+                    </div>
+                    <div class="buz_footer text-center">
+                        <p>{$v[content]}</p>
+                    </div>
+                </div>
+                {/loop}
+                {/pc}
+            </div>
+        </div>
+    </section>
+{template "content","footer_part"}
+{template "content","footer"}
